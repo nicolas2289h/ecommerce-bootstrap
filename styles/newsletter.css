@@ -1,0 +1,27 @@
+.newsletter{
+    background-color: #f3f3f3;
+}
+
+.newsletter p{
+    max-width: 600px;
+}
+
+.newsletter .input-group{
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+.newsletter .input-group button{
+    border-radius: 25px;
+    background-color: #4100aa;
+}
+
+.newsletter .input-group button:hover{
+    background-color: #6607ff;
+    color: #fff;
+}
+
+.form-control{
+    border-radius: 25px;
+    padding: 0 20px;
+}

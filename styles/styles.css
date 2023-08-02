@@ -1,0 +1,21 @@
+@import url('nav.css');
+@import url('header.css');
+@import url('coleccion.css');
+@import url('coleccion-especial.css');
+@import url('ofertas.css');
+@import url('blog.css');
+@import url('sobre-nosotros.css');
+@import url('newsletter.css');
+@import url('footer.css');
+@import url('media-queries.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* javascript ocultar botones */
+.ocultar-img{
+    display: none;
+}

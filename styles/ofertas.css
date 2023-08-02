@@ -1,0 +1,22 @@
+.offers{
+    background: linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8)), url(../images/2677266.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.offers .row{
+    height: 60vh;
+}
+
+.offers-content{
+    color: #fff;
+}
+
+.offers-content p{
+    font-size: 1.2rem;
+}
+
+.offers-content h2{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}

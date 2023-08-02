@@ -1,0 +1,48 @@
+section{
+    padding: 50px;
+}
+
+.collection{
+    position: relative;
+}
+
+.collection-list div{
+    transition: 500ms ease;
+}
+
+.titulo{
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 50px;
+    border-left: 7px solid red;
+    font-style: italic;
+}
+
+.collection-btns{
+    margin: 40px 0;
+}
+
+.btn-activo{
+    border: 3px solid #277dff;
+    background-color: #fff;
+    color: #277dff;
+    font-weight: 500;
+}
+
+.collection-img img{
+    padding: 5px;
+    border-radius: 7px;
+    opacity: .7;
+    box-shadow: 0 0 10px 2px #8b8b8b;
+    transition: 250ms all ease-in-out;
+}
+
+.collection-img img:hover{
+    opacity: 1;
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.rating{
+    color: gold;
+}

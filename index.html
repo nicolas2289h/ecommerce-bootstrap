@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Nicolas Huanca">
+    <meta name="description" content="Pagina Web ECommerce">
+    <meta name="keywords" content="HTML, CSS, Bootstrap, Javascript, ECommerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Web ECommerce</title>
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="home">
+        <div class="container">
+            <a class="navbar-brand order-lg-0" href="index.html">
+                <img width="120" src="./images/mlg-logo.png" alt="">
+            </a>
+
+            <div class="order-lg-2">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">2</span>
+                </button>
+                <!-- <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button> -->
+            </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#collection">Colección</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#special">Especial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blogs">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#newsletter">Suscripción</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HEADER -->
+      <header class="header carousel slide" id="carouselExampleRide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="header-carousel container carousel-inner">
+          <div class="carousel-item active">
+              <h2 class="text-white">Los Mejores Productos</h2>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsa.</p>              
+            <a href="#" class="btn-header btn btn-primary btn-circle">Comprar ahora</a>
+          </div>
+          <div class="carousel-item">
+              <h2 class="text-white">Stock En Promocion</h2>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsa.</p>
+            <a href="#" class="btn-header btn btn-primary btn-circle">Comprar ahora</a>
+          </div>
+          <div class="carousel-item">
+              <h2 class="text-white">Nuevos Lanzamientos</h2>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsa.</p>
+            <a href="#" class="btn-header btn btn-primary btn-circle">Comprar ahora</a>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+      </header>
+
+      <!-- COLLECTION -->
+      <section class="collection" id="collection">
+        <!-- <div class="added-collection">
+          <div class="added-img-container">
+            <span class="close"><i class="fa-regular fa-rectangle-xmark"></i></span>
+            <img class="added-img" src="" alt="">
+          </div>
+        </div> -->
+
+        <div class="container">
+          <div class="text-center">
+            <h2 class="titulo">Colección 2023</h2>
+          </div>
+        
+        <div class="row">
+          <!-- se agrega la clase para filtrar productos "filter-button-group" -->
+          <div class="collection-btns d-flex justify-content-center flex-wrap gap-3 filter-button-group">
+            <button class="btn btn-outline-primary btn-activo btn-todo" type="button" data-filter="*">Todo</button>
+            <button class="btn btn-outline-primary btn-vendido" type="button" data-filter=".vendido">Mas vendidos</button>
+            <button class="btn btn-outline-primary btn-recomendado" type="button" data-filter=".recomendado">Recomendados</button>
+            <button class="btn btn-outline-primary btn-nuevo" type="button" data-filter=".nuevo">Nuevo</button>
+          </div>
+        </div>
+
+        <div class="collection-list row">
+          <div class="col-md-6 col-lg-4 col-xl-3 vendido">
+            <div class="collection-img">
+              <img src="./images/Star-Wars-Darth-Vader-Buddha.jpg" class="w-100" alt="">
+              <!-- <span>En venta</span> -->
+            </div>
+            <div class="text-center mt-3">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>Darth Vader Buda <span class="fw-bold">$99.99</span></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 vendido">
+            <div class="collection-img">
+              <img src="./images/LED-Clock-Fan.jpg" class="w-100" alt="">
+              <!-- <span>En venta</span> -->
+            </div>
+            <div class="text-center mt-3">
+              <div class="rating">
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-half "></i>
+              </div>
+              <p>Reloj Ventilador LED <span class="fw-bold">$99.99</span></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 nuevo">
+            <div class="collection-img">
+              <img src="./images/miniguitar.webp" class="w-100" alt="">
+              <!-- <span>En venta</span> -->
+            </div>
+            <div class="text-center mt-3">
+              <div class="rating">
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star "></i>
+                <i class="bi bi-star "></i>
+              </div>
+              <p>Mini Guitarra Electrica <span class="fw-bold">$99.99</span></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 recomendado">
+            <div class="collection-img">
+              <img src="./images/aeroplano.webp" class="w-100" alt="">
+              <!-- <span>En venta</span> -->
+            </div>
+            <div class="text-center mt-3">
+              <div class="rating">
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-half "></i>
+              </div>
+              <p>Aeroplano Mecanico <span class="fw-bold">$99.99</span></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 nuevo">
+            <div class="collection-img">
+              <img src="./images/superman.webp" class="w-100" alt="">
+              <!-- <span>En venta</span> -->
+            </div>
+            <div class="text-center mt-3">
+              <div class="rating">
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star "></i>
+              </div>
+              <p>Superman Light Block <span class="fw-bold">$99.99</span></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 recomendado">
+            <div class="collection-img">
+              <img src="./images/lampara.webp" class="w-100" alt="">
+              <!-- <span>En venta</span> -->
+            </div>
+            <div class="text-center mt-3">
+              <div class="rating">
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-half "></i>
+                <i class="bi bi-star-half "></i>
+              </div>
+              <p>Lampara de prisma <span class="fw-bold">$99.99</span></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 vendido">
+            <div class="collection-img">
+              <img src="./images/cinema.webp" class="w-100" alt="">
+              <!-- <span>En venta</span> -->
+            </div>
+            <div class="text-center mt-3">
+              <div class="rating">
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star "></i>
+                <i class="bi bi-star "></i>
+              </div>
+              <p>Cinema Lightbox <span class="fw-bold">$99.99</span></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 recomendado">
+            <div class="collection-img">
+              <img src="./images/collar.webp" class="w-100" alt="">
+              <!-- <span>En venta</span> -->
+            </div>
+            <div class="text-center mt-3">
+              <div class="rating">
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+                <i class="bi bi-star-fill "></i>
+              </div>
+              <p>Collar Sistema Solar <span class="fw-bold">$99.99</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    
+    <!-- PRODUCTOS ESPECIALES -->
+    <section id="special">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="titulo">Colección Especial</h2>
+        </div>
+
+        <div class="special-list row">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="special-img">
+              <img src="./images/esferamarte.webp" class="w-100" alt="">
+            </div>
+            <div class="text-center mt-3">
+              <p>Esfera de Marte <span class="fw-bold">$99.99</span></p>
+              <a class="btn btn-outline-primary btn-carrito" href=""><i class="bi bi-cart-check"></i> Agregar</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="special-img">
+              <img src="./images/lamparamesa.webp" class="w-100" alt="">
+            </div>
+            <div class="text-center mt-3">
+              <p>Lampara de Mesa <span class="fw-bold">$99.99</span></p>
+              <a class="btn btn-outline-primary btn-carrito" href=""><i class="bi bi-cart-check"></i> Agregar</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="special-img">
+              <img src="./images/gameboy.jpg" class="w-100" alt="">
+            </div>
+            <div class="text-center mt-3">
+              <p>GameBoy <span class="fw-bold">$99.99</span></p>
+              <a class="btn btn-outline-primary btn-carrito" href=""><i class="bi bi-cart-check"></i> Agregar</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="special-img">
+              <img src="./images/gocube.webp" class="w-100" alt="">
+            </div>
+            <div class="text-center mt-3">
+              <p>Juego GoCube <span class="fw-bold">$99.99</span></p>
+              <a class="btn btn-outline-primary btn-carrito" href=""><i class="bi bi-cart-check"></i> Agregar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- OFERTAS -->
+    <section class="offers" id="offers">
+      <div class="container">
+        <div class="row d-flex align-items-center text-center">
+          <div class="offers-content">
+            <h2>Super Ofertas</h2>
+            <p>Descuentos de hasta el 40%</p>
+            <a href="" class="btn btn-primary">Realizar compra</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blogs" class="blog">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="titulo">Blog de Novedades</h2>
+        </div>
+
+        <div class="row d-flex justify-content-around gap-3">
+          <div class="card cols-sm-12 col-md-6 col-lg-4">
+            <img src="./images/blogg.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Assassin’s Creed Valhalla es el primer videojuego en ganar un Grammy</h4>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio accusantium debitis numquam aperiam reprehenderit, facilis ea vel dolorum veniam, accusamus aliquid commodi architecto natus.</p>
+              <p class="card-text"><span class="fw-bold">Author: </span>Nicolas H.</p>
+              <a href="" class="btn btn-outline-primary">Leer Mas</a>
+            </div>
+          </div>
+
+          <div class="card cols-sm-12 col-md-6 col-lg-4">
+            <img src="./images/blog2.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Nuevos lanzamientos para tu PC Gamer</h4>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio accusantium debitis numquam aperiam reprehenderit, facilis ea vel dolorum veniam, accusamus aliquid commodi architecto natus.</p>
+              <p class="card-text"><span class="fw-bold">Author: </span>Nicolas H.</p>
+              <a href="" class="btn btn-outline-primary">Leer Mas</a>
+            </div>
+          </div>
+
+          <div class="card cols-sm-12 col-md-6 col-lg-4">
+            <img src="./images/blog3.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Poco presentó los nuevos integrantes de su familia, el Poco X5 y X5 Pro</h4>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio accusantium debitis numquam aperiam reprehenderit, facilis ea vel dolorum veniam, accusamus aliquid commodi architecto natus.</p>
+              <p class="card-text"><span class="fw-bold">Author: </span>Nicolas H.</p>
+              <a href="" class="btn btn-outline-primary">Leer Mas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sobre nosotros -->
+    <section id="about" class="sobre-nosotros">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h2 class="titulo">Sobre Nosotros</h2>
+          </div>
+          <div class="sobre-nosotros-texto col-lg-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure iusto nihil itaque voluptatum adipisci suscipit sapiente at quam omnis, explicabo debitis minus repellat autem!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, sequi? Fuga quae voluptatem quis libero inventore eius est repudiandae. Commodi placeat sed, neque ad vitae natus dicta rem omnis sequi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate obcaecati, distinctio consequatur laudantium, pariatur dignissimos est, libero omnis quam repudiandae dicta nihil? Molestias, numquam saepe cumque reprehenderit optio similique aspernatur dolores recusandae provident, labore repellat? Itaque dolor veritatis dolorem?</p>
+          </div>
+          <div class="col-lg-6">
+            <img src="./images/blog.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="text-center">
+            <h2 class="titulo">Suscripción de Noticias</h2>
+          </div>
+
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat non cum corporis distinctio eius odit sed rerum commodi ad!</p>
+          <div class="input-group">
+            <input type="email" placeholder="Email" class="form-control">
+            <button class="btn text-white" type="submit">suscribirse</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row d-flex justify-content-around align-items-start">
+
+          <div class="footer-seccion col-md-6 col-lg-3">
+            <h5>Enlaces</h5>
+            <ul>
+              <li><a href="#home"><i class="bi bi-caret-right"></i> Home</a></li>
+              <li><a href="#collection"><i class="bi bi-caret-right"></i> Colección</a></li>
+              <li><a href="#blogs"><i class="bi bi-caret-right"></i> Blog de Novedades</a></li>
+              <li><a href="#about"><i class="bi bi-caret-right"></i> Sobre Nosotros</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-seccion col-md-6 col-lg-3">
+            <h5>Contacto</h5>
+            <div class="d-flex justify-content-start align-items-start">
+              <p><i class="bi bi-envelope-at r-3"></i> contacto@email.com</p>
+            </div>
+            
+            <div class="d-flex justify-content-start align-items-start">
+              <p><i class="bi bi-telephone-plus-fill"></i> 555-555-5555</p>
+            </div>
+          </div>
+
+          <div class="footer-seccion col-md-6 col-lg-3">
+            <h5>Redes</h5>
+            <ul class="redes-iconos">
+              <li><a href="#"><i class="footer-icono bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="footer-icono bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="footer-icono bi bi-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-datos">&copy Nicolas Huanca 2023 - <a target="_blank" class="footer-datos__github" href="https://github.com/nicolas2289h">Github</a></div>
+    </footer>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/182ae96ce8.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.header{
+    background-image: url(../images/banner.jpg);
+    height: 89.1vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn-header{
+    border-radius: 0 !important;
+    background: linear-gradient(45deg, #003e9b, #277dff);
+    text-shadow: 0 0 6px #fff;
+    border: 2px solid #fff !important;
+    animation: 1s linear aumentar infinite;
+}
+
+@keyframes aumentar {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.09);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.header-carousel{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    display: flex;  
+    align-items: center;
+}
+
+.carousel-item h2, .carousel-item p{
+    text-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000;
+}

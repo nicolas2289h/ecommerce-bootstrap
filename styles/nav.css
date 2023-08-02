@@ -1,0 +1,18 @@
+.navbar{
+    background-color: #f3f3f3;
+}
+
+.nav-link{
+    margin: 0 20px;
+    padding: 0;
+    color: #277dff;
+    border: 2px solid transparent;
+    font-weight: 500;
+    transition: 500ms all;
+}
+
+.nav-link:hover{
+    border: 2px solid #277dff;
+    border-radius: 15px;
+    color: #277dff;
+}
